@@ -6,17 +6,19 @@ import Profile from './pages/Profile.vue'
 import VueRouter from 'vue-router'
 import Buefy from 'buefy'
 
-import store from "./store/store"
+import {store} from "./store/store"
 
 Vue.use(Buefy)
 Vue.use(VueRouter)
 Vue.config.productionTip = false
 
+
+
 const routes = [
 
   { 'path': '/', component: Home },
-  { 'path': '/login', component: Login },
-  { 'path': "/profile", component: Profile }
+  { 'path': '/login', component: Login},
+  { 'path': "/profile", component: Profile, }
 ]
 
 const router = new VueRouter({
