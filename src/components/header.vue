@@ -27,8 +27,7 @@
     </b-navbar>
 </template>
 <script>
-import {mapActions} from 'vuex';
-import {mapGetters} from 'vuex';
+import {mapActions, mapGetters} from 'vuex';
 export default {
     name:'Header',
     computed:{
@@ -38,8 +37,9 @@ export default {
         ...mapActions('user',['logout']),
         logoutUser(){
             this.logout();
-            this.$router.push('/')
-        }
+            this.$router.push('/login')
+        },
+        
     }
 }
 </script>
