@@ -17,9 +17,15 @@ import Header from '../components/header.vue'
 import {mapGetters} from 'vuex';
 export default {
     name:'Profile',
+    data(){
+        return{
+            userName:''
+        }
+    },
     components: {
         Header
     },
+
     computed:{
         ...mapGetters('user',['getUserEmail'])
     },

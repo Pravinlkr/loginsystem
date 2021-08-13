@@ -1,13 +1,13 @@
 <template>
   <div id="app">
-    
-    <router-view></router-view>
+    <main-page></main-page>
   </div>
 </template>
 
 <script>
-
+import mainPage from './components/mainPage.vue'
 export default {
+  components: { mainPage },
   name: 'App'
 }
 </script>

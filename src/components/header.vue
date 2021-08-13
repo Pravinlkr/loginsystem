@@ -38,8 +38,9 @@ export default {
         ...mapActions('user',['logout']),
         logoutUser(){
             this.logout();
-            this.$router.push('/')
-        }
+            this.$router.push('/login')
+        },
+        
     }
 }
 </script>
