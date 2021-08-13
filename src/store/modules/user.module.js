@@ -34,9 +34,6 @@ const mutations = {
         state.isLoggedIn = false
         
         localStorage.clear();
-        /*let user = {email: state.userDetails.email, password: state.userDetails.password, isLoggedIn: false}
-        const parsed = JSON.stringify(user);
-        localStorage.setItem('LoginCredentials',parsed);*/
     }
 }
 const actions = {
